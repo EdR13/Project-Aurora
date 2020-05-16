@@ -5,7 +5,11 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
-        menu.cpp
+        menu.cpp \
+        node.cpp \
+        vertex.cpp
 
 HEADERS += \
-    menu.h
+    menu.h \
+    node.h \
+    vertex.h
