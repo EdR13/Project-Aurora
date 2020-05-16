@@ -17,6 +17,8 @@ public:
     void EditNode();
     void NewNode();
     void ShowNodes();
+    void NewVertex();
+    bool isUsed(const std::string &name);
 
 };
 
