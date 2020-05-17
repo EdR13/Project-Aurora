@@ -7,7 +7,6 @@ class node
 {
 public:
     node();
-    std::vector<int> Vertices;
 
     std::string getName() const;
     void setName(const std::string &value);
