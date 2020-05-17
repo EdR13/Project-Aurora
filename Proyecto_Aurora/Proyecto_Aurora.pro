@@ -4,12 +4,12 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        edge.cpp \
         main.cpp \
         menu.cpp \
-        node.cpp \
-        vertex.cpp
+        node.cpp
 
 HEADERS += \
+    edge.h \
     menu.h \
-    node.h \
-    vertex.h
+    node.h

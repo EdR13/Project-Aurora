@@ -1,11 +1,11 @@
-#ifndef VERTEX_H
-#define VERTEX_H
+#ifndef EDGE_H
+#define EDGE_H
 
 
-class vertex
+class edge
 {
 public:
-    vertex();
+    edge();
     int getWeight() const;
     void setWeight(int value);
 
@@ -15,10 +15,14 @@ public:
     int getTargetNode() const;
     void setTargetNode(int value);
 
+    bool getBidirectional() const;
+    void setBidirectional(bool value);
+
 private:
     int Weight;
     int SourceNode;
     int TargetNode;
+    bool bidirectional = false;
 };
 
-#endif // VERTEX_H
+#endif // EDGE_H
