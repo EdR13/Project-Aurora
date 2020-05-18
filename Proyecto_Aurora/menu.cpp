@@ -24,7 +24,7 @@ void Menu::menu()
         std::cout << "\n" << tabs << "Menú Principal" << std::endl << std::endl << std::endl << std::endl;
         std::cout << tabs << "[1] Modificar grafo." << std::endl
              << tabs << "[2] Crear Árbol de Expansión Mínima (Prim)." << std::endl
-             << tabs << "[3] Encontrar Camino Mínimo (Dijsktra)." << std::endl
+             << tabs << "[3] Encontrar Camino Mínimo (Dijkstra)." << std::endl
              << tabs << "[4] Salir del programa." << std::endl << std::endl
              << tabs << "Elección: ";
         getline(std::cin, opc);
@@ -39,7 +39,7 @@ void Menu::menu()
         }
         else if(opc == "3")
         {
-            Dijsktra();
+            Dijkstra();
         }
         else if(opc == "4")
         {
@@ -857,12 +857,12 @@ void Menu::Prim()
     getchar();
 }
 
-void Menu::Dijsktra()
+void Menu::Dijkstra()
 {
     std::string opc, tabs = "\t\t";
     system("cls");
 
-    std::cout << "\n" << tabs << "Dijsktra es un algoritmo para grafos dirigidos, convexos y ponderados que permite encontrar camínos mínimos entre todos los nodos del grafo." << std::endl;
+    std::cout << "\n" << tabs << "Dijkstra es un algoritmo para grafos dirigidos, convexos y ponderados que permite encontrar camínos mínimos entre todos los nodos del grafo." << std::endl;
     std::cout << tabs << "Consideraciones al usar este algoritmo: " << std::endl;
     std::cout << "* El grafo debe ser conexo, de no serlo, el comportamiento de este algoritmo será indefinido, pues solo se considerará un subgrafo y el resultado no será el esperado." << std::endl;
 
