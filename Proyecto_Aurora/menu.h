@@ -20,6 +20,7 @@ public:
     void NewEdge();
     void ShowEdges();
     void Prim();
+    void Dijkstra();
     bool isUsed(const std::string &name);
 
 };
