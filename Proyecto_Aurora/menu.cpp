@@ -265,6 +265,11 @@ void Menu::AddGraph()
             newEdge.setWeight(4);
             newEdge.setBidirectional(false);
             edgeList.push_back(newEdge);
+            newEdge.setSourceNode(1); // v2
+            newEdge.setTargetNode(3); // v4
+            newEdge.setWeight(7);
+            newEdge.setBidirectional(false);
+            edgeList.push_back(newEdge);
             system("cls");
         }
         else
