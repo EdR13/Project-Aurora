@@ -265,11 +265,6 @@ void Menu::AddGraph()
             newEdge.setWeight(4);
             newEdge.setBidirectional(false);
             edgeList.push_back(newEdge);
-            newEdge.setSourceNode(1); // v2
-            newEdge.setTargetNode(3); // v4
-            newEdge.setWeight(7);
-            newEdge.setBidirectional(false);
-            edgeList.push_back(newEdge);
             system("cls");
         }
         else
@@ -400,7 +395,7 @@ void Menu::EditNode()
     if(found){
         std::string opc;
         std::cout << "\n" << tabs << "Seleccione lo que desee hacer." << std::endl << std::endl;
-        std::cout << tabs << "[1] Modificar nombre\n" << tabs << "[2] Modificar aristas\n" << tabs << "[0] Cancelar\n\n" << tabs << "Selección: ";
+        std::cout << tabs << "[1] Modificar nombre\n" /*<< tabs << "[2] Modificar aristas\n"*/ << tabs << "[0] Cancelar\n\n" << tabs << "Selección: ";
         getline(std::cin, opc);
 
         if(opc == "1"){
